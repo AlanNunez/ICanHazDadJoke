@@ -34,7 +34,7 @@ extension NetworkError {
     public var errorDescription: String? {
         switch self {
         case .HTTPStatusError:
-            return NSLocalizedString("An expected error duringthe request. Please, try again later.", comment: "HTTP error")
+            return NSLocalizedString("An expected error during the request. Please, try again later.", comment: "HTTP error")
             case .transportError(_):
                 return NSLocalizedString("An expected error during the request. Please, try again.", comment: "Transport error")
             case .noData:
