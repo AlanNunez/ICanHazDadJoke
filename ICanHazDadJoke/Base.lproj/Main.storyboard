@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ICanHazDadJoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMc-5L-fTx" customClass="GetJokeButton" customModule="ICanHazDadJoke" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cTX-ol-NCR"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get a Joke"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pA-aO-otu"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-DV-hZ9">
+                                <rect key="frame" x="20" y="158" width="374" height="594"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Joke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kj-zy-Obr" userLabel="Joke Type">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CpV-NW-Mgr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Do you want to know something funny?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-qJ-fdf">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="544"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="aWD-qJ-fdf" firstAttribute="leading" secondItem="tUk-DV-hZ9" secondAttribute="leading" id="BIR-Et-euf"/>
+                                    <constraint firstAttribute="trailing" secondItem="aWD-qJ-fdf" secondAttribute="trailing" id="Cme-zC-uRY"/>
+                                    <constraint firstAttribute="bottom" secondItem="aWD-qJ-fdf" secondAttribute="bottom" id="dIV-QU-agQ"/>
+                                    <constraint firstItem="4Kj-zy-Obr" firstAttribute="leading" secondItem="tUk-DV-hZ9" secondAttribute="leading" id="dxO-Sa-irE"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Kj-zy-Obr" secondAttribute="trailing" id="pTt-fk-7Kp"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad Jokes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7Z-YE-Pky">
+                                <rect key="frame" x="145" y="104" width="113.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="4DZ-rw-fGr"/>
+                                    <constraint firstAttribute="height" constant="34" id="ODY-Z4-OmN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n7Z-YE-Pky" firstAttribute="centerX" secondItem="tUk-DV-hZ9" secondAttribute="centerX" constant="-5.5" id="9CI-lM-2cv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AMc-5L-fTx" secondAttribute="bottom" constant="20" id="F9Y-m2-EFP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AMc-5L-fTx" secondAttribute="trailing" constant="20" id="IaK-X0-1NF"/>
+                            <constraint firstItem="tUk-DV-hZ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TNx-30-WNJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AMc-5L-fTx" secondAttribute="trailing" constant="20" id="WZs-Nm-696"/>
+                            <constraint firstItem="AMc-5L-fTx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XUf-SN-ZbC"/>
+                            <constraint firstItem="tUk-DV-hZ9" firstAttribute="top" secondItem="n7Z-YE-Pky" secondAttribute="bottom" constant="20" id="a49-Xm-b9q"/>
+                            <constraint firstItem="n7Z-YE-Pky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="aRN-fd-onG"/>
+                            <constraint firstItem="n7Z-YE-Pky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="b03-OX-yJM"/>
+                            <constraint firstItem="AMc-5L-fTx" firstAttribute="top" secondItem="tUk-DV-hZ9" secondAttribute="bottom" constant="40" id="ezS-e0-wuk"/>
+                            <constraint firstItem="AMc-5L-fTx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mq0-n4-47q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dadJokesTitle" destination="n7Z-YE-Pky" id="VPq-26-pMk"/>
+                        <outlet property="getJokeButton" destination="AMc-5L-fTx" id="1ai-pL-WSm"/>
+                        <outlet property="jokeTypeLabel" destination="4Kj-zy-Obr" id="IMD-1J-6Fq"/>
+                        <outlet property="jokeView" destination="aWD-qJ-fdf" id="PVZ-yr-0aK"/>
+                        <outlet property="jokes" destination="tUk-DV-hZ9" id="Q6w-b9-V7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="AMc-5L-fTx">
+            <size key="intrinsicContentSize" width="93" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
