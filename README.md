@@ -5,6 +5,10 @@ This App Prompts Random Dad Jokes
 
 ICanHazDadJoke is a single screen application that retrieves and displays a random joke to the user.
 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png ""
+
 ## Project
 
 The project was setup to target iPhones only. Furthermore, icons, splash images, and other basic details were included.
