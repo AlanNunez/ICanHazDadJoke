@@ -92,7 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="dadJokesTitle" destination="n7Z-YE-Pky" id="VPq-26-pMk"/>
-                        <outlet property="getJokeButton" destination="AMc-5L-fTx" id="1ai-pL-WSm"/>
+                        <outlet property="jokeButton" destination="AMc-5L-fTx" id="1ai-pL-WSm"/>
                         <outlet property="jokeTypeLabel" destination="4Kj-zy-Obr" id="IMD-1J-6Fq"/>
                         <outlet property="jokeView" destination="aWD-qJ-fdf" id="PVZ-yr-0aK"/>
                         <outlet property="jokes" destination="tUk-DV-hZ9" id="Q6w-b9-V7K"/>
