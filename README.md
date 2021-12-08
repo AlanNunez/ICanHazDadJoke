@@ -1,12 +1,5 @@
 # ICanHazDadJoke
 This App Prompts Random Dad Jokes
-
-## Table of contents
-
-  - [Overview](#overview)
-  - [Project](#project)
-  - [Design](#design)
-  - [TODO](#todo)
   
 ## Overview
 
