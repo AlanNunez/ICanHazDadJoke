@@ -7,7 +7,7 @@ ICanHazDadJoke is a single screen application that retrieves and displays a rand
 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png ""
+[logo]: https://github.com/AlanNunez/ICanHazDadJoke/blob/master/GifDadJoke.gif ""
 
 ## Project
 
