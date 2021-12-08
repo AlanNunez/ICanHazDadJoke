@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         jokeViewModel.getRandomJoke() { response, error in
             if let error = error {
                 self.updateUI(error.localizedDescription)
+                return
             }
             if let randomJoke = response {
                 self.updateUI(randomJoke.joke)

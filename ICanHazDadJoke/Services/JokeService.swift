@@ -22,8 +22,9 @@ class JokeService: RandomJokeProtocol {
         URLSession.shared.dataTask(with: request) {(data, response, error) in
             if let networkError = NetworkError(data: data, response: response, error: error) {
                 completion(.none, networkError)
+            } else {
+                completion(data, .none)
             }
-            completion(data, .none)
         }.resume()
     }
 }
