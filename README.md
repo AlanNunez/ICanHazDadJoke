@@ -7,7 +7,7 @@ ICanHazDadJoke is a single screen application that retrieves and display jokes t
 
 ## Project
 
-The project was setup to target iPhones only. Furthermore, icons, splash images, and other basic details were included to simulate a production app to some extend.
+The project was setup to target iPhones only. Furthermore, icons, splash images, and other basic details were included.
 
 ## Design
 
