@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE0B66E627603A9300627CDC /* JokeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B66E527603A9300627CDC /* JokeURL.swift */; };
+		EEACBA9A276061AD00B5BFDF /* RandomJokeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACBA99276061AD00B5BFDF /* RandomJokeProtocol.swift */; };
 		EEE9302E275E3CDE00837993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9302D275E3CDE00837993 /* AppDelegate.swift */; };
 		EEE93030275E3CDE00837993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9302F275E3CDE00837993 /* SceneDelegate.swift */; };
 		EEE93032275E3CDE00837993 /* DadJokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE93031275E3CDE00837993 /* DadJokeController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		EE0B66E527603A9300627CDC /* JokeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeURL.swift; sourceTree = "<group>"; };
+		EEACBA99276061AD00B5BFDF /* RandomJokeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeProtocol.swift; sourceTree = "<group>"; };
 		EEE9302A275E3CDE00837993 /* ICanHazDadJoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICanHazDadJoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE9302D275E3CDE00837993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE9302F275E3CDE00837993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEACBA982760610D00B5BFDF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EEACBA99276061AD00B5BFDF /* RandomJokeProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EEE93021275E3CDE00837993 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		EEE9302C275E3CDE00837993 /* ICanHazDadJoke */ = {
 			isa = PBXGroup;
 			children = (
+				EEACBA982760610D00B5BFDF /* Protocols */,
 				EEE93070276001FA00837993 /* ViewModel */,
 				EEE93065275EF7F100837993 /* Utilities */,
 				EEE93062275E3F5800837993 /* Services */,
@@ -330,6 +341,7 @@
 				EE0B66E627603A9300627CDC /* JokeURL.swift in Sources */,
 				EEE93032275E3CDE00837993 /* DadJokeController.swift in Sources */,
 				EEE930722760023100837993 /* JokeViewModel.swift in Sources */,
+				EEACBA9A276061AD00B5BFDF /* RandomJokeProtocol.swift in Sources */,
 				EEE9302E275E3CDE00837993 /* AppDelegate.swift in Sources */,
 				EEE93064275E3FAA00837993 /* JokeService.swift in Sources */,
 				EEE9306F275FE6B400837993 /* GetJokeButton.swift in Sources */,

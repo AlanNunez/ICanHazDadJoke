@@ -5,5 +5,5 @@
 import Foundation
 
 enum ContentType: String {
-    case JSON
+    case JSON = "application/json"
 }

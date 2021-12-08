@@ -4,12 +4,12 @@
 
 import Foundation
 
-class JokeService {
+class JokeService: RandomJokeProtocol {
     
     func getRandomJoke(_ formatResponse: ContentType = .JSON, completion: @escaping (Data?, NetworkError?) -> ()) {
         var request = URLRequest(url: URL(string: JokeURL.randomJoke.rawValue)!)
         if (formatResponse == .JSON) {
-            setHeaders(&request, contentType: "application/json")
+            setHeaders(&request, contentType: ContentType.JSON.rawValue)
         }
         httpClient(request, completion)
     }
