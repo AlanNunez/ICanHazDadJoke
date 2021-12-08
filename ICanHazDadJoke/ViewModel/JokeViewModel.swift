@@ -5,7 +5,7 @@
 import Foundation
 
 class JokeViewModel {
-    var jokeService: JokeService
+    private var jokeService: JokeService
     
     init() {
         jokeService = JokeService()
